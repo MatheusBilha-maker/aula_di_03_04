@@ -5,39 +5,39 @@
 body{
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4; /*cor em hexadecimal*/
+    background-color: #03013b; /*cor em hexadecimal*/
 }
 header{
-    background-color: #c0c0c0;/*cinza cocô kkkk */
-    color: #000000; /*branco em hexadecimal*/
+    background-color: #030044;/*cinza cocô kkkk */
+    color: #ffffff; /*branco em hexadecimal*/
     text-align: center; /*centraliza o texto*/
 }
 nav a{ /*nav navigation a a, de link, vou trabalhar só no link*/
-    color: blue;
+    color: rgb(255, 255, 255);
     text-decoration: none; /*tirei toda a decoração do texto*/
     padding: 4px;
 }
 .bloco{ /*declaração de class, a class procede de "." */
     background-color: #cccc;
-    color: black;
+    color: rgb(0, 0, 0);
     border: 1px dotted #a3a3; /*borda geral tracejada*/
     border-radius: 6px;
     padding: 16px;
     margin-bottom: 16px;
-    border-top: 2px solid #d8d; /*borda superior solida*/
+    border-top: 2px solid rgb(255, 255, 255); /*borda superior solida*/
 }
 #galeria{
     display: flex; 
     flex-wrap: wrap;
     gap: 24px;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 20px;
 }
 .foto{
     background: #ffffff;
     padding: 12px 12px 20px 12px;
     border: 1px solid #dddddd;
-    box-shadow: 0 4px 10px #000000;
+    box-shadow: 0 4px 10px #ffffff;
     width: 220px;
     text-align: center;
     border-radius: 4px;
@@ -47,4 +47,16 @@ nav a{ /*nav navigation a a, de link, vou trabalhar só no link*/
     height: 220px;
     object-fit: cover;
     display: block;
+}
+.foto img:hover{
+    transform: scale(1.25) rotate(-5deg); 
+}
+.legenda{
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-style: italic;
+}
+footer {
+  color: rgb(255, 255, 255);
 }
